@@ -36,11 +36,11 @@
 1. [Ruchlewicz Natalia](https://github.com/nruchlewicz/NoSQL)
 1. [Samsoniuk Damian](https://github.com/dsamsoniuk/NoSQL)
 1. [Przemyslaw Tomasik](https://github.com/ptomasik1/Nowe)
+1. [Patryk Brzozowski](https://github.com/pbrzozowski/nosql)
 
 
 <!--
 1. Blum Bartosz
-1. Brzozowski Patryk
 1. Chylicki Adrian
 1. Śliwiński Marcin
 1. Tkacz Jessica
