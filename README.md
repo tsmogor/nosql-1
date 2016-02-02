@@ -23,10 +23,11 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 > — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
 
 Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
-w plikach [Zaliczenie.md](Zaliczenie.md) i [Egzamin.md](Egzamin.md)
-w jednym wierszu według schematu:
+w plikach [Zaliczenie.md](Zaliczenie.md) w jednym wierszu według schematu:
 
     1. [Nazwisko, Imię](link do prywatnego repo z rozwiązaniami zadań)
+
+[Link do szablonu aplikacji z rozwiązaniami](https://github.com/egzamin/solutions-nosql).
 
 
 ## Simple Rules for Reproducible Computations
@@ -45,7 +46,7 @@ Provide public access to scripts, runs, and results:
     automate its generation
 1. Use a markup, for example
    [**Markdown**](http://daringfireball.net/projects/markdown/syntax), or
-   [**AsciiDoc**](http://asciidoctor.org)
+   [**AsciiDoctor**](http://asciidoctor.org)
    to create reports for analysis and presentation output products.
 
 Plus two more rules:
