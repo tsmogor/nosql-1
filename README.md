@@ -4,18 +4,17 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 
 | zadanie |                      | stacjonarne | niestacjonarne |
 |---------|--------------------- |-------------|----------------|
-| 1       | EDA + GeoJSON        | 19.11.2015  | 27.11.2015     |
-| 2.      | Aggregation Pipeline | 10.01.2016  |  8.01.2016     |
+| 1       | EDA + GeoJSON        | ??.??.2016  | ??.??.2016     |
+| 2.      | Aggregation Pipeline | ??.??.2017  | ??.??.2017     |
 | 3.      | MapReduce            | dodatkowe   | dodatkowe      |
-| 4.      | Neo4j                | dodatkowe   | dodatkowe      |
 
 
 ## Podręczne linki
 
-[Dokumentacja MongoDB](https://docs.mongodb.org/manual/):
-
-* [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
-* [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
+1. [Dokumentacja MongoDB](https://docs.mongodb.org/manual/):
+  * [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
+  * [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
+1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets).
 
 
 ## Zaliczenie i Egzamin
