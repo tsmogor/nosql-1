@@ -24,7 +24,7 @@
 1. [Miszczykowski Mariusz](https://github.com/miszczyk/noSQL/blob/master/README.md)
 1. [Ponieważ Paweł](https://github.com/pponiewaz/NoSQL)
 1. [Wasilewski Tomasz](https://github.com/twasilewski/noSQL_labs/tree/noSQL_zad)
-1. [Wiergowski Paweł](https://github.com/pwiergowski/nosql_f/blob/master/zaliczenie.md)
+1. [Wiergowski Paweł](https://github.com/pwiergowski/nosql_f)
 1. [Adrian Chylicki](https://github.com/adrianchylicki/nosql)
 
 ----
