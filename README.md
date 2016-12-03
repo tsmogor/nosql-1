@@ -15,6 +15,7 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
   * [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
   * [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
 1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets).
+1. [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
 
 
 ## Zaliczenie i Egzamin
