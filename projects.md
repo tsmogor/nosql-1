@@ -18,6 +18,7 @@ MongoDB, v3.4.x:
   - Ruby:
     * [Mongo](https://docs.mongodb.com/ruby-driver/master/quick-start/),
       [Sample Application with the MongoDB Ruby Driver](https://github.com/steveren/ruby-driver-sample-app)
+      (uses collections _restaurants_ and _neighborhoods_)
     * [Mongoid](https://docs.mongodb.com/ruby-driver/master/mongoid/) –
       the ODM officially supported by MongoDB is Mongoid,
       originally written by Durran Jordan
