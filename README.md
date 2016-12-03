@@ -4,9 +4,9 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 
 | zadanie |                      | stacjonarne | niestacjonarne |
 |---------|--------------------- |-------------|----------------|
-| 1       | EDA + GeoJSON        | ??.??.2016  | ??.??.2016     |
+| 1       | EDA + GeoJSON        |             |                |
 | 2.      | Aggregation Pipeline | ??.??.2017  | ??.??.2017     |
-| 3.      | MapReduce            | dodatkowe   | dodatkowe      |
+| 3.      | MapReduce            |             |                |
 
 
 ## Podręczne linki
@@ -24,7 +24,7 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 > — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
 
 Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
-w plikach [Zaliczenie.md](Zaliczenie.md) w jednym wierszu według schematu:
+w pliku [projects.md](projects.md) w jednym wierszu według schematu:
 
     1. [Nazwisko, Imię](link do prywatnego repo z rozwiązaniami zadań)
 
