@@ -63,6 +63,7 @@ get_nyc <- function(path) {
 
 all <- lapply(dir("data-raw/flights", full.names = TRUE), get_nyc)
 flights <- bind_rows(all)
+nrow(flights) # 5_819_811
 flights$tailnum[flights$tailnum == ""] <- NA
 
 make_datetime_100 <- function(year, month, day, time) {
@@ -79,11 +80,16 @@ flights <- flights %>%
   ) %>%
   select(origin, dest, distance, ends_with("delay"), ends_with("time"), tailnum)
 
-flights = flights %>%
+flights14 = flights %>%
   mutate(
     dep_delay = as.integer(dep_delay),
     arr_delay = as.integer(arr_delay),
     air_time = as.integer(air_time)
   )
 
-save(flights, file = "data/flights-2014.rda", compress = "bzip2")
+save(flights14, file = "data/flights-2014.rda", compress = "bzip2")
+
+nycflights14 = flights %>%
+  filter(origin %in% c("JFK", "LGA", "EWR"))
+
+save(flights14, file = "data/nycflights14.rda", compress = "bzip2")

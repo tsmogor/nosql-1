@@ -1,4 +1,4 @@
-## nycflights14
+## NYC Flights 2014
 
 Scripts and docs are from the
 [_nycflights13_](https://github.com/hadley/nycflights13).
