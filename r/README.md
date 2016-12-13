@@ -11,15 +11,23 @@ dokumentacja jest w katalogu *docs*.
 
 * [Getting started with MongoDB in R](https://cran.r-project.org/web/packages/mongolite/vignettes/intro.html)
 
-```r
+```{r}
 library(mongolite)
+```
 
+Import all flights from 2014 and NYC flights from 2014.
+```{r}
 load("data/flights-2014.rda")
 
 m = mongo(collection = "flights14")
 m$insert(flights)
 
+mnyc = mongo(collection = "nycflights14")
+mnyc$insert(nycflights14)
+
 # check records
 m$count()
-nrow(diamonds)
+nrow(flights)
+mnyc$count()
+nrow(nycflights14)
 ```
