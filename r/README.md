@@ -18,10 +18,10 @@ library(mongolite)
 Import all flights from 2014 and NYC flights from 2014.
 ```{r}
 load("data/flights-2014.rda")
-
 m = mongo(collection = "flights14")
 m$insert(flights)
 
+load("data/nycflights14.rda")
 mnyc = mongo(collection = "nycflights14")
 mnyc$insert(nycflights14)
 
