@@ -1,6 +1,7 @@
 library(dplyr)
 library(readr)
 library(purrr)
+library(ggplot2)
 
 if (!file.exists("data-raw/airports.dat")) {
   download.file(
@@ -29,28 +30,7 @@ airports <- raw %>%
   select(faa, name, lat, lon, alt, tz, dst, tzone) %>%
   group_by(faa) %>% slice(1) %>% ungroup() # take first if duplicated
 
-# no geonamesUsername set. See http://geonames.wordpress.com/2010/03/16/ddos-part-ii/
-# and set one with options(geonamesUsername="foo") for some services to work
-# options(geonamesUsername="wbzyl")
-
-# find time zones
-# get_tz <- function(lat, lon) {
-#  cat(".")
-#  GNtimezone(lat, lon)
-# }
-# tz <- map2(airports$lat, airports$lon, safely(get_tz))
-# tz <- transpose(tz)
-
-# ok <- tz$error %>% map_lgl(is.null)
-# airports[!ok, ]
-# airports = airports[ok, ]
-
-# airports$tzone <- tz$result[ok] %>%
-#  map("timezoneId", .null = NA) %>%
-#  map_chr(as.character)
-
-# Verify the results: possibly misaligned Charleston or Savannach
-library(ggplot2)
+# verify the results: possibly misaligned Charleston or Savannach
 airports %>%
   filter(lon < 0) %>%
   ggplot(aes(lon, lat)) +
@@ -59,5 +39,9 @@ airports %>%
 
 # write_csv(airports, bzfile("data-raw/airports.csv.bz2"))         -- does not work
 # write_csv(airports, "data-raw/airports.csv", compress = "bzip2")
-write.csv(airports, bzfile("data-raw/airports.csv.bz2"))
+write.csv(airports, bzfile("data-raw/airports.csv.gz"))
 save(airports, file = "data/airports.rda", compress = "bzip2")
+
+# read PL & Russia airports
+
+# TODO
