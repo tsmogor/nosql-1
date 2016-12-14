@@ -5,7 +5,7 @@ library(dplyr)
 library(lubridate)
 library(readr)
 
-# Download ---------------------------------------------------------------------
+# Download
 
 get_asos <- function(station) {
   url <- "http://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?"
@@ -25,7 +25,7 @@ paths <- paste0(stations, ".csv")
 missing <- stations[!(paths %in% dir("data-raw/weather/"))]
 lapply(missing, get_asos)
 
-# Load ------------------------------------------------------------------------
+# Load
 
 paths <- dir("data-raw/weather", full.names = TRUE)
 all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE)
