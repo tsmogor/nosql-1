@@ -78,7 +78,9 @@ flights <- flights %>%
     sched_dep_time = make_datetime_100(year, month, day, sched_dep_time),
     sched_arr_time = make_datetime_100(year, month, day, sched_arr_time)
   ) %>%
-  select(origin, dest, distance, ends_with("delay"), ends_with("time"), tailnum)
+  select(origin, dest, distance, carrier, flight, tailnum,
+         hour, minute, time_hour,
+         ends_with("delay"), ends_with("time"))
 
 flights14 = flights %>%
   mutate(
@@ -88,8 +90,10 @@ flights14 = flights %>%
   )
 
 save(flights14, file = "data/flights-2014.rda", compress = "bzip2")
+write.csv(flights14, gzfile("data-raw/flights14.csv.gz"))
 
 nycflights14 = flights %>%
   filter(origin %in% c("JFK", "LGA", "EWR"))
 
-save(flights14, file = "data/nycflights14.rda", compress = "bzip2")
+save(nycflights14, file = "data/nycflights14.rda", compress = "bzip2")
+write.csv(nycflights14, gzfile("data-raw/nycflights14.csv.gz"))
