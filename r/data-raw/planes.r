@@ -11,8 +11,8 @@ src <- "http://registry.faa.gov/database/ReleasableAircraft.zip"
 lcl <- "data-raw/planes"
 
 if (!file.exists(lcl)) {
-  # tmp <- tempfile(fileext = ".zip")
-  tmp <- "~/tmp/ReleasableAircraft.zip"
+  tmp <- tempfile(fileext = ".zip")
+  # tmp <- "~/tmp/ReleasableAircraft.zip"
   download.file(url = src, destfile = tmp, method = "wget") # libcurl does not work
 
   dir.create(lcl)
@@ -70,7 +70,7 @@ planes <- all %>%
   semi_join(flights, "tailnum") %>%
   arrange(tailnum)
 
-write_csv(planes, "data-raw/planes.csv")
+write.csv(planes, gzfile("data-raw/planes.csv.gz"))
 save(planes, file = "data/planes.rda")
 
 planes14 <- all %>%
@@ -81,5 +81,5 @@ planes14 <- all %>%
   semi_join(flights14, "tailnum") %>%
   arrange(tailnum)
 
-write_csv(planes, "data-raw/planes14.csv")
+write.csv(planes, gzfile("data-raw/planes14.csv.gz"))
 save(planes, file = "data/planes14.rda")
