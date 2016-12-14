@@ -74,7 +74,7 @@ raw <- bind_rows(all)
 var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
   "p01i", "alti", "mslp", "vsby", "gust", "skyc1", "skyc2", "skyc3", "skyc4",
   "skyl1", "skyl2", "skyl3", "skyl4", "presentwx", "metar")
-length(var_names)
+# length(var_names)
 names(raw) <- var_names
 
 weather <- raw %>%
@@ -98,5 +98,5 @@ weather <- raw %>%
     time_hour = ISOdatetime(year, month, day, hour, 0, 0)
   )
 
-write_csv(weather, "data-raw/weather.csv")
+write.csv(weather, gzfile("data-raw/weather.csv,gz"))
 save(weather, file = "data/weather.rda", compress = "bzip2")
