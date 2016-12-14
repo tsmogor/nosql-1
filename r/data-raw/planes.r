@@ -2,13 +2,18 @@ library(dplyr)
 library(readr)
 
 # Update URL from
+
 # http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
-src <- "http://registry.faa.gov/database/AR062014.zip"
+# src <- "http://registry.faa.gov/database/AR062014.zip"
+
+# https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
+src <- "http://registry.faa.gov/database/ReleasableAircraft.zip"
 lcl <- "data-raw/planes"
 
 if (!file.exists(lcl)) {
-  tmp <- tempfile(fileext = ".zip")
-  download.file(src, tmp)
+  # tmp <- tempfile(fileext = ".zip")
+  tmp <- "~/tmp/ReleasableAircraft.zip"
+  download.file(url = src, destfile = tmp, method = "wget") # libcurl does not work
 
   dir.create(lcl)
   unzip(tmp, exdir = lcl, junkpaths = TRUE)
