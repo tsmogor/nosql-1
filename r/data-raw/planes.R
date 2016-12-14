@@ -26,8 +26,7 @@ keep <- master %>%
   tbl_df() %>%
   select(nnum = n.number, code = mfr.mdl.code, year = year.mfr)
 
-ref <- read.csv("data-raw/planes//ACFTREF.txt", stringsAsFactors = FALSE,
-  strip.white = TRUE)
+ref <- read.csv("data-raw/planes/ACFTREF.txt", stringsAsFactors = FALSE, strip.white = TRUE)
 names(ref) <- tolower(names(ref))
 
 ref <- ref %>%
@@ -56,7 +55,12 @@ all$type.acft <- NULL
 
 all$tailnum <- paste0("N", all$nnum)
 
-load("data/flights.rda")
+# load("data/flights.rda")
+load("data/flights-2014.rda")
+load("data/nycflights14.rda")
+
+# Relational Data
+#   http://r4ds.had.co.nz/relational-data.html#nycflights13-relational
 
 planes <- all %>%
   select(
@@ -68,3 +72,14 @@ planes <- all %>%
 
 write_csv(planes, "data-raw/planes.csv")
 save(planes, file = "data/planes.rda")
+
+planes14 <- all %>%
+  select(
+    tailnum, year, type, manufacturer = mfr, model = model,
+    engines = no.eng, seats = no.seats, speed, engine
+  ) %>%
+  semi_join(flights14, "tailnum") %>%
+  arrange(tailnum)
+
+write_csv(planes, "data-raw/planes14.csv")
+save(planes, file = "data/planes14.rda")
