@@ -50,7 +50,7 @@ airports_pl <- raw %>%
   group_by(faa) %>% slice(1) %>% ungroup() # take first if duplicated
 
 write.csv(airports_pl, gzfile("data-raw/airports_pl.csv.gz"))
-save(airports, file = "data/airports_pl.rda", compress = "bzip2")
+save(airports_pl, file = "data/airports_pl.rda", compress = "bzip2")
 
 # Russia airports
 airports_ru <- raw %>%
@@ -65,5 +65,5 @@ airports_ru %>%
   scale_colour_discrete(name = "tz") +
   coord_quickmap()
 
-write.csv(airports_pl, gzfile("data-raw/airports_ru.csv.gz"))
-save(airports, file = "data/airports_ru.rda", compress = "bzip2")
+write.csv(airports_ru, gzfile("data-raw/airports_ru.csv.gz"))
+save(airports_ru, file = "data/airports_ru.rda", compress = "bzip2")
