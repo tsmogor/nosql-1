@@ -1,31 +1,30 @@
 # From https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
+# From:
+#   https://mesonet.agron.iastate.edu/request/download.phtml?network=PL__ASOS#
 
 library(httr)
 library(dplyr)
 library(lubridate)
 library(readr)
 
-# Download
-
-get_asos <- function(station) {
+get_asos <- function(station, first_year, last_year) {
   url <- "http://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?"
   query <- list(
     station = station, data = "all",
-    year1 = "2013", month1 = "1", day1 = "1",
-    year2 = "2013", month2 = "12", day2 = "31", tz = "GMT",
+    year1 = as.character(first_year), month1 = "1", day1 = "1",
+    year2 = as.character(last_year), month2 = "12", day2 = "31", tz = "GMT",
     format = "comma", latlon = "no", direct = "yes")
 
-  dir.create("data-raw/weather", showWarnings = FALSE, recursive = TRUE)
-  r <- GET(url, query = query, write_disk(paste0("./data-raw/weather/", station, ".csv")))
+  dir.create("data-raw/weather_pl", showWarnings = FALSE, recursive = TRUE)
+  r <- GET(url, query = query, write_disk(paste0("./data-raw/weather_pl/", station, ".csv")))
   stop_for_status(r)
 }
 
-stations <- c("JFK", "LGA", "EWR")
+# Gdańsk Rębiechowo, Kraków Balice, Warszawa Okęcie
+stations <- c("EPGD", "EPKK", "EPWA")
 paths <- paste0(stations, ".csv")
-missing <- stations[!(paths %in% dir("data-raw/weather/"))]
-lapply(missing, get_asos)
-
-# Load
+missing <- stations[!(paths %in% dir("data-raw/weather_pl/"))]
+lapply(missing, get_asos, 2014, 2014)
 
 # Variable Descriptions
 #   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
@@ -61,12 +60,16 @@ lapply(missing, get_asos)
 # https://cran.r-project.org/web/packages/readr/vignettes/column-types.html
 
 problematic_cols = cols(
-  X12 = col_double(),
-  X18 = col_double(),
-  X19 = col_double(),
-  X20 = col_double()
+  X12 = col_character(),
+  X13 = col_character(),
+  X14 = col_character(),
+  X15 = col_character(),
+  X16 = col_character(),
+  X18 = col_character(),
+  X19 = col_character(),
+  X20 = col_character()
 )
-paths <- dir("data-raw/weather", full.names = TRUE)
+paths <- dir("data-raw/weather_pl", full.names = TRUE)
 all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE,
               col_types = problematic_cols)
 
