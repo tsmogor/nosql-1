@@ -11,7 +11,7 @@ _Source_: G. Grolemund, H. Wickham [R for Data Science](http://r4ds.had.co.nz/re
 Skompresowane pobrane dane są zapisane w katalogu **data**,
 dokumentacja jest w katalogu *docs*.
 
-## r & mongodb
+## R & MongoDB
 
 * [Getting started with MongoDB in R](https://cran.r-project.org/web/packages/mongolite/vignettes/intro.html)
 
@@ -35,3 +35,33 @@ nrow(flights)
 mnyc$count()
 nrow(nycflights14)
 ```
+
+Import weather data for Gdańsk Rębiechowo, Kraków Balice, Warszawa Okęcie.
+```{r}
+load("data/weather_pl.rda")
+m = mongo(collection = "weather_pl")
+m$insert(weather_pl)
+```
+
+A sample record:
+```js
+{
+  "_id": ObjectId("5851b349e5cc35387b1b3791"),
+  "station": "EPGD",
+  "year": 2014,
+  "month": 1,
+  "minute": 0,
+  "day": 1,
+  "hour": 0,
+  "temp": 32,
+  "dewp": 32,
+  "humid": 100,
+  "wind_dir": 180,
+  "wind_speed": 9.20624,
+  "wind_gust": 10.594356867,
+  "precip": 0,
+  "visib": 0.5,
+  "time_hm": ISODate("2013-12-31T23:00:00Z")
+}
+```
+See _docs/weather_pl.r_ for description of variables/attributes.
