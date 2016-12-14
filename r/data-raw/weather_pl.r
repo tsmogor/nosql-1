@@ -103,3 +103,8 @@ weather_pl <- raw %>%
 
 write.csv(weather_pl, gzfile("data-raw/weather_pl.csv,gz"))
 save(weather_pl, file = "data/weather_pl.rda", compress = "bzip2")
+
+# library(dplyr)
+# load("data/weather_pl.rda")
+# weather_pl %>% tbl_df()
+# TODO: import data to MongoDB
