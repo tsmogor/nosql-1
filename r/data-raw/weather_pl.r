@@ -24,7 +24,7 @@ get_asos <- function(station, first_year, last_year) {
 stations <- c("EPGD", "EPKK", "EPWA")
 paths <- paste0(stations, ".csv")
 missing <- stations[!(paths %in% dir("data-raw/weather_pl/"))]
-lapply(missing, get_asos, 2014, 2014)
+lapply(missing, get_asos, 2006, 2015)
 
 # Variable Descriptions
 #   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
@@ -80,7 +80,7 @@ var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
 # length(var_names)
 names(raw) <- var_names
 
-weather <- raw %>%
+weather_pl <- raw %>%
   select(
     station, time, temp = tmpf, dewp = dwpf, humid = relh,
     wind_dir = drct, wind_speed = sknt, wind_gust = gust,
@@ -91,7 +91,7 @@ weather <- raw %>%
     wind_speed = as.numeric(wind_speed) * 1.15078, # convert to mpg
     wind_gust = as.numeric(wind_speed) * 1.15078
   ) %>%
-  mutate(year = 2013, month = month(time), day = mday(time), hour = hour(time)) %>%
+  mutate(year = year(time), month = month(time), day = mday(time), hour = hour(time)) %>%
   group_by(station, month, day, hour) %>%
   filter(row_number() == 1) %>%
   select(origin = station, year:hour, temp:visib) %>%
@@ -101,5 +101,5 @@ weather <- raw %>%
     time_hour = ISOdatetime(year, month, day, hour, 0, 0)
   )
 
-write.csv(weather, gzfile("data-raw/weather.csv,gz"))
-save(weather, file = "data/weather.rda", compress = "bzip2")
+write.csv(weather_pl, gzfile("data-raw/weather_pl.csv,gz"))
+save(weather, file = "data/weather_pl.rda", compress = "bzip2")

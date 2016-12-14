@@ -61,10 +61,10 @@ lapply(missing, get_asos)
 # https://cran.r-project.org/web/packages/readr/vignettes/column-types.html
 
 problematic_cols = cols(
-  X12 = col_double(),
-  X18 = col_double(),
-  X19 = col_double(),
-  X20 = col_double()
+  X12 = col_character(),
+  X18 = col_character(),
+  X19 = col_character(),
+  X20 = col_character()
 )
 paths <- dir("data-raw/weather", full.names = TRUE)
 all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE,
