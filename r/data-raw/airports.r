@@ -61,7 +61,8 @@ airports_ru <- raw %>%
 airports_ru %>%
   filter(lon > 18) %>%
   ggplot(aes(lon, lat)) +
-  geom_point(aes(colour = factor(tz)), show.legend = FALSE) +
+  geom_point(aes(colour = factor(tz)), size = 4) +
+  scale_colour_discrete(name = "tz") +
   coord_quickmap()
 
 write.csv(airports_pl, gzfile("data-raw/airports_ru.csv.gz"))
