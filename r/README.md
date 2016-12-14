@@ -4,6 +4,9 @@ Scripts and docs are from the
 [_nycflights13_](https://github.com/hadley/nycflights13).
 data package containing all out-bound flights in 2014 + useful metdata.
 
+![relational nycflights](images/relational-nycflights.png)
+_Source_: G. Grolemund, H. Wickham [R for Data Science](http://r4ds.had.co.nz/relational-data.html)
+
 Skompresowane pobrane dane są zapisane w katalogu **data**,
 dokumentacja jest w katalogu *docs*.
 
