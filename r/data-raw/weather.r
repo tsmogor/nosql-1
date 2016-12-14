@@ -27,13 +27,55 @@ lapply(missing, get_asos)
 
 # Load
 
+# Variable Descriptions
+#   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
+
+# station: Three or four character site identifier
+# valid:   Timestamp of the observation
+# tmpf:    Air Temperature in Fahrenheit, typically @ 2 meters
+# dwpf:    Dew Point Temperature in Fahrenheit, typically @ 2 meters
+# relh:    Relative Humidity in %
+# drct:    Wind Direction in degrees from north
+# sknt:    Wind Speed in knots
+# p01i:    One hour precipitation for the period from the observation time
+#          to the time of the previous hourly precipitation reset.
+#          This varies slightly by site. Values are in inches.
+#          This value may or may not contain frozen precipitation melted
+#          by some device on the sensor or estimated by some other means.
+#          Unfortunately, we do not know of an authoritative database
+#          denoting which station has which sensor.
+# alti:    Pressure altimeter in inches
+# mslp:    Sea Level Pressure in millibar
+# vsby:    Visibility in miles
+# gust:    Wind Gust in knots
+# skyc1:   Sky Level 1 Coverage
+# skyc2:   Sky Level 2 Coverage
+# skyc3:   Sky Level 3 Coverage
+# skyc4:   Sky Level 4 Coverage
+# skyl1:   Sky Level 1 Altitude in feet
+# skyl2:   Sky Level 2 Altitude in feet
+# skyl3:   Sky Level 3 Altitude in feet
+# skyl4:   Sky Level 4 Altitude in feet
+# presentwx: Present Weather Codes (space seperated)
+# metar:   unprocessed reported observation in METAR format
+# https://cran.r-project.org/web/packages/readr/vignettes/column-types.html
+
+problematic_cols = cols(
+  X12 = col_double(),
+  X18 = col_double(),
+  X19 = col_double(),
+  X20 = col_double()
+)
 paths <- dir("data-raw/weather", full.names = TRUE)
-all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE)
+all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE,
+              col_types = problematic_cols)
 
 raw <- bind_rows(all)
-names(raw) <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
+var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
   "p01i", "alti", "mslp", "vsby", "gust", "skyc1", "skyc2", "skyc3", "skyc4",
-  "skyl1", "skyl2", "skyl3", "skyl4", "metar")
+  "skyl1", "skyl2", "skyl3", "skyl4", "presentwx", "metar")
+length(var_names)
+names(raw) <- var_names
 
 weather <- raw %>%
   select(
