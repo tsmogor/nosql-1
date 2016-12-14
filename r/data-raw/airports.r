@@ -38,10 +38,31 @@ airports %>%
     coord_quickmap()
 
 # write_csv(airports, bzfile("data-raw/airports.csv.bz2"))         -- does not work
-# write_csv(airports, "data-raw/airports.csv", compress = "bzip2")
-write.csv(airports, bzfile("data-raw/airports.csv.gz"))
+# write_csv(airports, "data-raw/airports.csv", compress = "bzip2") -- does not work, too
+
+write.csv(airports, gzfile("data-raw/airports.csv.gz"))
 save(airports, file = "data/airports.rda", compress = "bzip2")
 
-# read PL & Russia airports
+# Polish airports
+airports_pl <- raw %>%
+  filter(country == "Poland", faa != "") %>%
+  select(faa, name, lat, lon, alt, tz, dst, tzone) %>%
+  group_by(faa) %>% slice(1) %>% ungroup() # take first if duplicated
 
-# TODO
+write.csv(airports_pl, gzfile("data-raw/airports_pl.csv.gz"))
+save(airports, file = "data/airports_pl.rda", compress = "bzip2")
+
+# Russia airports
+airports_ru <- raw %>%
+  filter(country == "Russia", faa != "") %>%
+  select(faa, name, lat, lon, alt, tz, dst, tzone) %>%
+  group_by(faa) %>% slice(1) %>% ungroup() # take first if duplicated
+
+airports_ru %>%
+  filter(lon > 18) %>%
+  ggplot(aes(lon, lat)) +
+  geom_point(aes(colour = factor(tz)), show.legend = FALSE) +
+  coord_quickmap()
+
+write.csv(airports_pl, gzfile("data-raw/airports_ru.csv.gz"))
+save(airports, file = "data/airports_ru.rda", compress = "bzip2")
