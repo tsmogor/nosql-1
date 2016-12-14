@@ -12,3 +12,6 @@ airlines <- raw %>%
 
 write_csv(airlines, "data-raw/airlines.csv")
 save(airlines, file = "data/airlines.rda")
+
+# write.csv(airports_pl, gzfile("data-raw/airports_ru.csv.gz"))
+# save(airports, file = "data/airports_ru.rda", compress = "bzip2")
