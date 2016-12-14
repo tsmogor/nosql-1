@@ -65,3 +65,9 @@ A sample record:
 }
 ```
 See _docs/weather_pl.r_ for description of variables/attributes.
+
+Import all records as a list of JSONs.
+```{bash}
+mongoexport -c weather_pl | gzip > weather.json.gz
+gunzip -c weather.json.gz | head -2 | jq
+```
