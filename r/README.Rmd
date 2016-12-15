@@ -36,6 +36,29 @@ mnyc$count()
 nrow(nycflights14)
 ```
 
+A sample record form the _nycflights14_ collection:
+```js
+{
+  "_id": ObjectId("585329b6e5cc3512142aef61"),
+  "origin": "JFK",
+  "dest": "BQN",
+  "distance": 1576,
+  "carrier": "B6",
+  "flight": 839,
+  "tailnum": "N521JB",
+  "hour": 23,
+  "minute": 59,
+  "time_hour": ISODate("2014-01-01T23:00:00Z"),
+  "dep_delay": 7,
+  "arr_delay": 13,
+  "dep_time": ISODate("2014-01-01T00:06:00Z"),
+  "sched_dep_time": ISODate("2014-01-01T23:59:00Z"),
+  "arr_time": ISODate("2014-01-01T04:50:00Z"),
+  "sched_arr_time": ISODate("2014-01-01T04:37:00Z"),
+  "air_time": 198
+}
+```
+
 Import weather data for Gdańsk Rębiechowo, Kraków Balice, Warszawa Okęcie.
 ```{r}
 load("data/weather_pl.rda")
@@ -43,7 +66,7 @@ m = mongo(collection = "weather_pl")
 m$insert(weather_pl)
 ```
 
-A sample record:
+A sample record form the _weather_pl_ collection:
 ```js
 {
   "_id": ObjectId("5851b349e5cc35387b1b3791"),
