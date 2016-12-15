@@ -20,11 +20,34 @@ library(mongolite)
 ```
 
 Import all flights from 2014 and NYC flights from 2014.
+
 ```{r}
 load("data/flights-2014.rda")
 m = mongo(collection = "flights14")
 m$insert(flights)
+```
 
+A sample record form the _flights_ collection:
+
+```js
+{
+  "_id": ObjectId("584427bbe5cc35dc57503e41"),
+  "origin": "PDX",
+  "dest": "ANC",
+  "distance": 1542,
+  "dep_delay": 96,
+  "arr_delay": 70,
+  "dep_time": ISODate("2014-01-01T00:01:00Z"),
+  "sched_dep_time": ISODate("2014-01-01T22:25:00Z"),
+  "arr_time": ISODate("2014-01-01T02:35:00Z"),
+  "sched_arr_time": ISODate("2014-01-01T01:25:00Z"),
+  "air_time": 194,
+  "tailnum": "N508AS"
+}
+```
+TODO: add _carrier_, _flight_, _hour_, _minute_, _time_hm_ attributes.
+
+```js
 load("data/nycflights14.rda")
 mnyc = mongo(collection = "nycflights14")
 mnyc$insert(nycflights14)
