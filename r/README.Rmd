@@ -27,7 +27,7 @@ m = mongo(collection = "flights14")
 m$insert(flights14)
 ```
 
-A sample record form the _flights_ collection:
+A sample record form the _flights14_ collection:
 
 ```js
 {
