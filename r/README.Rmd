@@ -91,6 +91,9 @@ Import weather data for Gdańsk Rębiechowo, Kraków Balice, Warszawa Okęcie.
 load("data/weather_pl.rda")
 m = mongo(collection = "weather_pl")
 m$insert(weather_pl)
+
+mnyc = mongo(collection = "weather")
+mnyc$insert(weather)
 ```
 
 A sample record form the _weather_pl_ collection:
@@ -116,8 +119,8 @@ A sample record form the _weather_pl_ collection:
 ```
 See _docs/weather_pl.r_ for description of variables/attributes.
 
-Import all records as a list of JSONs.
+Export all records as a list of JSONs, for example
 ```{bash}
-mongoexport -c weather_pl | gzip > weather.json.gz
-gunzip -c weather.json.gz | head -2 | jq
+mongoexport -c weather_pl | gzip > weather_pl.json.gz
+gunzip -c weather_pl.json.gz | head -2 | jq  # check
 ```
