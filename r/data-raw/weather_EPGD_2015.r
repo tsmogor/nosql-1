@@ -81,7 +81,7 @@ var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
 # length(var_names)
 names(raw) <- var_names
 
-weather_epgd <- raw %>%
+epgd15 <- raw %>%
   select(
     station, time, temp = tmpf, dewp = dwpf, humid = relh,
     wind_dir = drct, wind_speed = sknt, wind_gust = gust,
@@ -110,10 +110,9 @@ weather_epgd <- raw %>%
     time_hour = ISOdatetime(year, month, day, hour, minute, 0)
   )
 
-write.csv(weather_epgd, gzfile("data-raw/weather_epgd.csv,gz"))
-save(weather_epgd, file = "data/weather_epgd.rda", compress = "bzip2")
+write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"))
+save(epgd15, file = "data/weather_epgd_2015.rda", compress = "bzip2")
 
 # library(dplyr)
-# load("data/weather_pl.rda")
-# weather_pl %>% tbl_df()
-# TODO: import data to MongoDB
+# load("data/weather_epgd_2015.rda")
+# epgd15 %>% tbl_df()
