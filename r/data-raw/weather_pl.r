@@ -74,6 +74,7 @@ all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE,
               col_types = problematic_cols)
 
 raw <- bind_rows(all)
+nrow(raw)
 var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
   "p01i", "alti", "mslp", "vsby", "gust", "skyc1", "skyc2", "skyc3", "skyc4",
   "skyl1", "skyl2", "skyl3", "skyl4", "presentwx", "metar")
@@ -107,4 +108,3 @@ save(weather_pl, file = "data/weather_pl.rda", compress = "bzip2")
 # library(dplyr)
 # load("data/weather_pl.rda")
 # weather_pl %>% tbl_df()
-# TODO: import data to MongoDB
