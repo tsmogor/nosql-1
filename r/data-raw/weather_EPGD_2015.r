@@ -15,16 +15,17 @@ get_asos <- function(station, first_year, last_year) {
     year2 = as.character(last_year), month2 = "12", day2 = "31", tz = "GMT",
     format = "comma", latlon = "no", direct = "yes")
 
-  dir.create("data-raw/weather_pl", showWarnings = FALSE, recursive = TRUE)
-  r <- GET(url, query = query, write_disk(paste0("./data-raw/weather_pl/", station, ".csv")))
+  dir.create("data-raw/weather_epgd", showWarnings = FALSE, recursive = TRUE)
+  r <- GET(url, query = query, write_disk(paste0("./data-raw/weather_epgd/", station, ".csv")))
   stop_for_status(r)
 }
 
-# Gdańsk Rębiechowo, Kraków Balice, Warszawa Okęcie
-stations <- c("EPGD", "EPKK", "EPWA")
+# Gdańsk Rębiechowo
+stations <- c("EPGD")
 paths <- paste0(stations, ".csv")
 missing <- stations[!(paths %in% dir("data-raw/weather_pl/"))]
-lapply(missing, get_asos, 2014, 2015)
+
+lapply(missing, get_asos, 2015, 2015)
 
 # Variable Descriptions
 #   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
@@ -69,7 +70,7 @@ problematic_cols = cols(
   X19 = col_character(),
   X20 = col_character()
 )
-paths <- dir("data-raw/weather_pl", full.names = TRUE)
+paths <- dir("data-raw/weather_epgd", full.names = TRUE)
 all <- lapply(paths, read_csv, skip = 6, na = "M", col_names = FALSE,
               col_types = problematic_cols)
 
@@ -80,29 +81,35 @@ var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt",
 # length(var_names)
 names(raw) <- var_names
 
-weather_pl <- raw %>%
+weather_epgd <- raw %>%
   select(
     station, time, temp = tmpf, dewp = dwpf, humid = relh,
     wind_dir = drct, wind_speed = sknt, wind_gust = gust,
     precip = p01i, pressure = mslp, visib = vsby
   ) %>%
+  # see Difference Between Gust and Wind --
+  #   http://www.differencebetween.net/science/nature/difference-between-gust-and-wind/
   mutate(
     time = as.POSIXct(strptime(time, "%Y-%m-%d %H:%M")),
-    wind_speed = as.numeric(wind_speed) * 1.15078, # convert to mpg
-    wind_gust = as.numeric(wind_speed) * 1.15078
+    # 1 knots = 0.514444444 meters / second = 1.85200 kilometers per hour
+    wind_speed = as.numeric(wind_speed) * 0.514444444, # convert to m/s
+    wind_gust = as.numeric(wind_speed) * 0.514444444
   ) %>%
-  mutate(year = year(time), month = month(time), minute = minute(time), day = mday(time), hour = hour(time)) %>%
-  # group_by(station, month, day, hour) %>%
-  # filter(row_number() == 1) %>%
-  select(station, year:hour, temp:visib) %>%
-  # ungroup() %>%
-  # filter(!is.na(month)) %>%
   mutate(
-    time_hm = ISOdatetime(year, month, day, hour, minute, 0)
+    year = year(time), month = month(time), day = mday(time), hour = hour(time)
   )
+  # %>%
+  # group_by(station, year, month, day, hour) %>%
+  # filter(row_number() == 1) %>%
+  # select(station, year:hour, temp:visib) %>%
+  # # ungroup() %>%
+  # # filter(!is.na(month)) %>%
+  # mutate(
+  #   time_hm = ISOdatetime(year, month, day, hour, minute, 0)
+  # )
 
-write.csv(weather_pl, gzfile("data-raw/weather_pl.csv,gz"))
-save(weather_pl, file = "data/weather_pl.rda", compress = "bzip2")
+write.csv(weather_epgd, gzfile("data-raw/weather_epgd.csv,gz"))
+save(weather_epgd, file = "data/weather_epgd.rda", compress = "bzip2")
 
 # library(dplyr)
 # load("data/weather_pl.rda")
