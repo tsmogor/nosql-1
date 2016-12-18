@@ -23,7 +23,7 @@ get_asos <- function(station, first_year, last_year) {
 # Gdańsk Rębiechowo
 stations <- c("EPGD")
 paths <- paste0(stations, ".csv")
-missing <- stations[!(paths %in% dir("data-raw/weather_pl/"))]
+missing <- stations[!(paths %in% dir("data-raw/weather_epgd/"))]
 
 lapply(missing, get_asos, 2015, 2015)
 
@@ -91,22 +91,24 @@ weather_epgd <- raw %>%
   #   http://www.differencebetween.net/science/nature/difference-between-gust-and-wind/
   mutate(
     time = as.POSIXct(strptime(time, "%Y-%m-%d %H:%M")),
+    temp = (32 - as.numeric(temp)) * 5/9, # convert from °F to °C
+    dewp = (32 - as.numeric(dewp)) * 5/9,
     # 1 knots = 0.514444444 meters / second = 1.85200 kilometers per hour
     wind_speed = as.numeric(wind_speed) * 0.514444444, # convert to m/s
-    wind_gust = as.numeric(wind_speed) * 0.514444444
+    wind_gust = as.numeric(wind_gust) * 0.514444444,
+    visib = as.numeric(visib) * 1.609344 # convert to kilometers
   ) %>%
   mutate(
-    year = year(time), month = month(time), day = mday(time), hour = hour(time)
-  )
-  # %>%
-  # group_by(station, year, month, day, hour) %>%
-  # filter(row_number() == 1) %>%
+    year = year(time), month = month(time), day = mday(time),
+    hour = hour(time), minute = minute(time)
+  ) %>% group_by(station, year, month, day, hour) %>%
+  filter(row_number() == 1) %>%
   # select(station, year:hour, temp:visib) %>%
-  # # ungroup() %>%
-  # # filter(!is.na(month)) %>%
-  # mutate(
-  #   time_hm = ISOdatetime(year, month, day, hour, minute, 0)
-  # )
+  ungroup() %>%
+  filter(!is.na(time)) %>%
+  mutate(
+    time_hour = ISOdatetime(year, month, day, hour, minute, 0)
+  )
 
 write.csv(weather_epgd, gzfile("data-raw/weather_epgd.csv,gz"))
 save(weather_epgd, file = "data/weather_epgd.rda", compress = "bzip2")
