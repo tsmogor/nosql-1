@@ -117,7 +117,7 @@ epgd15_sqlite = epgd15 %>%
 
 write.csv(epgd15_sqlite,
           gzfile("data-raw/weather_epgd_2015.csv.gz"),
-          row.names = FALSE, quote = FALSE)
+          row.names = FALSE, quote = FALSE, na = "")
 
 # Read data back into R:
 #   library(dplyr)
