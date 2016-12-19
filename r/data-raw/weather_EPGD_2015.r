@@ -91,12 +91,12 @@ epgd15 <- raw %>%
   #   http://www.differencebetween.net/science/nature/difference-between-gust-and-wind/
   mutate(
     time = as.POSIXct(strptime(time, "%Y-%m-%d %H:%M")),
-    temp = (32 - as.numeric(temp)) * 5/9, # convert from °F to °C
-    dewp = (32 - as.numeric(dewp)) * 5/9,
+    temp = round((32 - as.numeric(temp)) * 5/9, 2), # convert from °F to °C
+    dewp = round((32 - as.numeric(dewp)) * 5/9, 2),
     # 1 knots = 0.514444444 meters / second = 1.85200 kilometers per hour
-    wind_speed = as.numeric(wind_speed) * 0.514444444, # convert to m/s
-    wind_gust = as.numeric(wind_gust) * 0.514444444,
-    visib = as.numeric(visib) * 1.609344 # convert to kilometers
+    wind_speed = round(as.numeric(wind_speed) * 0.514444444, 2), # convert to m/s
+    wind_gust = round(as.numeric(wind_gust) * 0.514444444, 2),
+    visib = round(as.numeric(visib) * 1.609344, 2) # convert to kilometers
   ) %>%
   mutate(
     year = year(time), month = month(time), day = mday(time),
@@ -110,9 +110,16 @@ epgd15 <- raw %>%
     time_hour = ISOdatetime(year, month, day, hour, minute, 0)
   )
 
-write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"))
 save(epgd15, file = "data/weather_epgd_2015.rda", compress = "bzip2")
 
-# library(dplyr)
-# load("data/weather_epgd_2015.rda")
-# epgd15 %>% tbl_df()
+epgd15_sqlite = epgd15 %>%
+  mutate(id = row_number())
+
+write.csv(epgd15_sqlite,
+          gzfile("data-raw/weather_epgd_2015.csv.gz"),
+          row.names = FALSE, quote = FALSE)
+
+# Read data back into R:
+#   library(dplyr)
+#   load("data/weather_epgd_2015.rda")
+#   epgd15 %>% tbl_df()
