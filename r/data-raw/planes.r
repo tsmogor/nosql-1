@@ -70,7 +70,7 @@ planes <- all %>%
   semi_join(flights, "tailnum") %>%
   arrange(tailnum)
 
-write.csv(planes, gzfile("data-raw/planes.csv.gz"))
+write.csv(planes, gzfile("data-raw/planes.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(planes, file = "data/planes.rda")
 
 planes14 <- all %>%
@@ -81,5 +81,5 @@ planes14 <- all %>%
   semi_join(flights14, "tailnum") %>%
   arrange(tailnum)
 
-write.csv(planes, gzfile("data-raw/planes14.csv.gz"))
+write.csv(planes, gzfile("data-raw/planes14.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(planes, file = "data/planes14.rda")
