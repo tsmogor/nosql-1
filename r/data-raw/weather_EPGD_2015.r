@@ -115,8 +115,7 @@ save(epgd15, file = "data/weather_epgd_2015.rda", compress = "bzip2")
 # epgd15_sqlite = epgd15 %>%
 #  mutate(id = row_number())
 
-write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"),
-    row.names = FALSE, quote = FALSE, na = "")
+write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 
 # Read data back into R:
 #   library(dplyr)
