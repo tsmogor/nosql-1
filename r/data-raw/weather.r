@@ -27,7 +27,7 @@ lapply(missing, get_asos)
 
 # Load
 
-# Variable Descriptions
+# Original Variable Descriptions
 #   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
 
 # station: Three or four character site identifier

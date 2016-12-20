@@ -122,3 +122,8 @@ write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"),
 #   library(dplyr)
 #   load("data/weather_epgd_2015.rda")
 #   epgd15 %>% tbl_df()
+
+# Import into MongoDB
+# library(mongolite)
+# m = mongo(collection = "epgd15")
+# m$insert(epgd15)
