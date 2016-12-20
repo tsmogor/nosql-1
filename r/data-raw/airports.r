@@ -43,6 +43,11 @@ airports %>%
 write.csv(airports, gzfile("data-raw/airports.csv.gz"))
 save(airports, file = "data/airports.rda", compress = "bzip2")
 
+# Import into MongoDB
+# library(mongolite)
+# conn = mongo(collection = "airports")
+# conn$insert(airports)
+
 # Polish airports
 airports_pl <- raw %>%
   filter(country == "Poland", faa != "") %>%

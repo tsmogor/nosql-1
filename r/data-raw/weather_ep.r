@@ -24,10 +24,12 @@ get_asos <- function(station, first_year, last_year) {
 stations <- c("EPGD", "EPKK", "EPWA")
 paths <- paste0(stations, ".csv")
 missing <- stations[!(paths %in% dir("data-raw/weather_ep/"))]
+missing
 
 lapply(missing, get_asos, 2015, 2015)
 
 unused_cols = cols(
+  X12 = col_character(), # Can not automatically convert from numeric to character in column "X12" (gust)
   X13 = col_character(),
   X14 = col_character(),
   X15 = col_character(),
@@ -41,7 +43,11 @@ unused_cols = cols(
 )
 
 paths <- dir("data-raw/weather_ep", full.names = TRUE)
-all <- lapply(paths, read_csv, skip = 6, col_names = FALSE, col_types = unused_cols) # na = "M" ?
+paths
+
+# row col expected actual
+# 802  X6 a double      M
+all <- lapply(paths, read_csv, skip = 6, col_names = FALSE, col_types = unused_cols, na = "M")
 
 raw <- bind_rows(all)
 var_names <- c("station", "time", "tmpf", "dwpf", "relh", "drct", "sknt", "p01i", "alti", "mslp", "vsby", "gust",  # 1--12
@@ -77,6 +83,7 @@ ep15 <- raw %>%
   mutate(
     time_hour = ISOdatetime(year, month, day, hour, 0, 0) # 17
   )
+nrow(ep15)
 
 save(ep15, file = "data/weather_ep_2015.rda", compress = "bzip2")
 
