@@ -107,7 +107,7 @@ epgd15 <- raw %>%
   ungroup() %>%
   filter(!is.na(time)) %>%
   mutate(
-    time_hour = ISOdatetime(year, month, day, hour, minute, 0)
+    time_hour = ISOdatetime(year, month, day, hour, 0, 0)
   )
 
 save(epgd15, file = "data/weather_epgd_2015.rda", compress = "bzip2")
