@@ -17,6 +17,14 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets).
 1. [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
 
+Dane:
+
+* [Watching Our World Unfold](http://www.gdeltproject.org):
+  - [Querying, Analyzing and Downloading](http://www.gdeltproject.org/data.html);
+    [raw data files](http://www.gdeltproject.org/data.html)
+* [NOAA](https://www.ncdc.noaa.gov/data-access) –
+  National Centers for Environmental Information (US)
+
 
 ## Zaliczenie i Egzamin
 
