@@ -124,5 +124,5 @@ write.csv(epgd15, gzfile("data-raw/weather_epgd_2015.csv.gz"), row.names = FALSE
 
 # Import into MongoDB
 # library(mongolite)
-# m = mongo(collection = "epgd15")
-# m$insert(epgd15)
+# conn = mongo(collection = "epgd15")
+# conn$insert(epgd15)
