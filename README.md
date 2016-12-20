@@ -14,10 +14,11 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 1. [Dokumentacja MongoDB](https://docs.mongodb.org/manual/):
   * [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
   * [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
-1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets).
+1. [Docker Jumpstart](https://github.com/odewahn/docker-jumpstart)
 1. [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
+1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
 
-Dane:
+Więcej danych:
 
 * [Watching Our World Unfold](http://www.gdeltproject.org):
   - [Querying, Analyzing and Downloading](http://www.gdeltproject.org/data.html);
