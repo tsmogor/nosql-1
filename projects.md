@@ -6,7 +6,7 @@ Authoring Books and Technical Documents with R Markdown:
   [User Manual](https://bookdown.org/yihui/bookdown/);
   [source](https://github.com/rstudio/bookdown/tree/master/inst/examples).
 * Julia Silge and David Robinson.
-  [Tidy Text Mining with R]() – sentiment analysis, topic modeling,
+  [Tidy Text Mining with R](http://tidytextmining.com) – sentiment analysis, topic modeling,
   the [gutenbergr package](https://github.com/ropenscilabs/gutenbergr),
   the [janeaustenr package](https://cran.r-project.org/web/packages/janeaustenr/index.html).
 
