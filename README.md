@@ -76,7 +76,7 @@ Three more links:
   [Assessment of the pull based development model, as implemented by Github](https://github.com/gousiosg/pullreqs)
 
 
-## Bardzo duże pliki z danymi
+## Gigabajtowe pliki z danymi
 
 Spakowany plik _RC_2015-01.bz2_ zajmuje na dysku 5_452_413_560 B,
 czyli ok. 5.5 GB. Każda linijka pliku to jeden obiekt JSON, komentarz
