@@ -9,6 +9,7 @@ Authoring Books and Technical Documents with R Markdown:
   [Tidy Text Mining with R](http://tidytextmining.com) – sentiment analysis, topic modeling,
   the [gutenbergr package](https://github.com/ropenscilabs/gutenbergr),
   the [janeaustenr package](https://cran.r-project.org/web/packages/janeaustenr/index.html).
+* [Awesome-APIs](git@github.com:abhishekbanthia/Awesome-APIs.git)
 
 MongoDB, v3.4.x:
 
