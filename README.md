@@ -1,12 +1,12 @@
 # Technologie NoSQL
 
-Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
+Terminarz rozliczania się z [projektów](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 
-| zadanie |                      | stacjonarne | niestacjonarne |
-|---------|--------------------- |-------------|----------------|
-| 1       | EDA + GeoJSON        |             |                |
-| 2.      | Aggregation Pipeline | ??.??.2017  | ??.??.2017     |
-| 3.      | MapReduce            |             |                |
+| projekt              |                      | deadline    |
+|----------------------|--------------------- |-------------|
+| przygotowanie danych | EDA                  |             |
+| zaliczenie           | Aggregation Pipeline | 23.04.2017  |
+| egzamin              | MapReduce            | 21.05.2017  |
 
 
 ## Podręczne linki
@@ -33,11 +33,9 @@ Więcej danych:
 > — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
 
 Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
-w pliku [projects.md](projects.md) w jednym wierszu według schematu:
+w pliku [projects.md](projects.md).
 
-    1. [Nazwisko, Imię](link do prywatnego repo z rozwiązaniami zadań)
-
-[Link do szablonu aplikacji z rozwiązaniami](https://github.com/egzamin/solutions-nosql).
+[Link do szablonu repozytorium](https://github.com/egzamin/solutions-nosql).
 
 
 ## Simple Rules for Reproducible Computations
