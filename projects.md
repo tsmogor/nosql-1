@@ -30,6 +30,9 @@ MongoDB, v3.4.x:
 MapReduce.
 
 
+> A good demo is disproportionately valuable in big data science.<br>
+> — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
+
 ## Projekty indywidualne (zaliczenie)
 
 Pull request według schematu:

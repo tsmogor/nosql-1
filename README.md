@@ -8,6 +8,11 @@ Terminarz rozliczania się z [projektów](http://wbzyl.inf.ug.edu.pl/nosql/zadan
 | zaliczenie           | Aggregation Pipeline | 23.04.2017  |
 | egzamin              | MapReduce            | 21.05.2017  |
 
+Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
+w pliku [projects.md](projects.md).
+
+[Link do szablonu repozytorium](https://github.com/egzamin/solutions-nosql).
+
 
 ## Podręczne linki
 
@@ -25,17 +30,6 @@ Więcej danych:
     [raw data files](http://www.gdeltproject.org/data.html)
 * [NOAA](https://www.ncdc.noaa.gov/data-access) –
   National Centers for Environmental Information (US)
-
-
-## Zaliczenie i Egzamin
-
-> A good demo is disproportionately valuable in big data science.<br>
-> — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
-
-Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
-w pliku [projects.md](projects.md).
-
-[Link do szablonu repozytorium](https://github.com/egzamin/solutions-nosql).
 
 
 ## Simple Rules for Reproducible Computations
