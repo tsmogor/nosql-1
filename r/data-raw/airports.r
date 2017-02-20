@@ -40,8 +40,13 @@ airports %>%
 # write_csv(airports, bzfile("data-raw/airports.csv.bz2"))         -- does not work
 # write_csv(airports, "data-raw/airports.csv", compress = "bzip2") -- does not work, too
 
-write.csv(airports, gzfile("data-raw/airports.csv.gz"))
+write.csv(airports, gzfile("data-raw/airports.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(airports, file = "data/airports.rda", compress = "bzip2")
+
+# Import into MongoDB
+# library(mongolite)
+# conn = mongo(collection = "airports")
+# conn$insert(airports)
 
 # Polish airports
 airports_pl <- raw %>%
@@ -49,7 +54,7 @@ airports_pl <- raw %>%
   select(faa, name, lat, lon, alt, tz, dst, tzone) %>%
   group_by(faa) %>% slice(1) %>% ungroup() # take first if duplicated
 
-write.csv(airports_pl, gzfile("data-raw/airports_pl.csv.gz"))
+write.csv(airports_pl, gzfile("data-raw/airports_pl.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(airports_pl, file = "data/airports_pl.rda", compress = "bzip2")
 
 # Russia airports
@@ -65,5 +70,5 @@ airports_ru %>%
   scale_colour_discrete(name = "tz") +
   coord_quickmap()
 
-write.csv(airports_ru, gzfile("data-raw/airports_ru.csv.gz"))
+write.csv(airports_ru, gzfile("data-raw/airports_ru.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(airports_ru, file = "data/airports_ru.rda", compress = "bzip2")

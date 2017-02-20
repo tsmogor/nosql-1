@@ -1,12 +1,17 @@
 # Technologie NoSQL
 
-Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
+Terminarz rozliczania się z [projektów](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 
-| zadanie |                      | stacjonarne | niestacjonarne |
-|---------|--------------------- |-------------|----------------|
-| 1       | EDA + GeoJSON        |             |                |
-| 2.      | Aggregation Pipeline | ??.??.2017  | ??.??.2017     |
-| 3.      | MapReduce            |             |                |
+| projekt              | zadanie                  | deadline    |
+|----------------------|--------------------------|-------------|
+| przygotowanie danych | EDA (1, 2)               |             |
+| zaliczenie           | Aggregation Pipeline (3) | 23.04.2017  |
+| egzamin              | MapReduce (4)            | 21.05.2017  |
+
+Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
+w pliku [projects.md](projects.md).
+
+[Link do szablonu repozytorium](https://github.com/egzamin/solutions-nosql).
 
 
 ## Podręczne linki
@@ -14,21 +19,17 @@ Terminarz rozliczania się z [zadań](http://wbzyl.inf.ug.edu.pl/nosql/zadania):
 1. [Dokumentacja MongoDB](https://docs.mongodb.org/manual/):
   * [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
   * [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
-1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets).
+1. [Docker Jumpstart](https://github.com/odewahn/docker-jumpstart)
 1. [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
+1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
 
+Więcej danych:
 
-## Zaliczenie i Egzamin
-
-> A good demo is disproportionately valuable in big data science.<br>
-> — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
-
-Link do **prywatnego** repozytorium z rozwiązaniami zadań należy wpisać odpowiednio
-w pliku [projects.md](projects.md) w jednym wierszu według schematu:
-
-    1. [Nazwisko, Imię](link do prywatnego repo z rozwiązaniami zadań)
-
-[Link do szablonu aplikacji z rozwiązaniami](https://github.com/egzamin/solutions-nosql).
+* [Watching Our World Unfold](http://www.gdeltproject.org):
+  - [Querying, Analyzing and Downloading](http://www.gdeltproject.org/data.html);
+    [raw data files](http://www.gdeltproject.org/data.html)
+* [NOAA](https://www.ncdc.noaa.gov/data-access) –
+  National Centers for Environmental Information (US)
 
 
 ## Simple Rules for Reproducible Computations
@@ -67,7 +68,7 @@ Three more links:
   [Assessment of the pull based development model, as implemented by Github](https://github.com/gousiosg/pullreqs)
 
 
-## Bardzo duże pliki z danymi
+## Gigabajtowe pliki z danymi
 
 Spakowany plik _RC_2015-01.bz2_ zajmuje na dysku 5_452_413_560 B,
 czyli ok. 5.5 GB. Każda linijka pliku to jeden obiekt JSON, komentarz

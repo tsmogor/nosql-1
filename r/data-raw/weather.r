@@ -27,7 +27,7 @@ lapply(missing, get_asos)
 
 # Load
 
-# Variable Descriptions
+# Original Variable Descriptions
 #   https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS
 
 # station: Three or four character site identifier
@@ -98,5 +98,5 @@ weather <- raw %>%
     time_hour = ISOdatetime(year, month, day, hour, 0, 0)
   )
 
-write.csv(weather, gzfile("data-raw/weather.csv,gz"))
+write.csv(weather, gzfile("data-raw/weather.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 save(weather, file = "data/weather.rda", compress = "bzip2")

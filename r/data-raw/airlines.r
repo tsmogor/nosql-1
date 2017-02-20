@@ -10,5 +10,5 @@ airlines <- raw %>%
   semi_join(flights) %>%
   arrange(carrier)
 
-write_csv(airlines, "data-raw/airlines.csv")
+write_csv(airlines, "data-raw/airlines.csv", row.names = FALSE, quote = FALSE, na = "")
 save(airlines, file = "data/airlines.rda")

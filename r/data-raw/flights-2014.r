@@ -90,11 +90,10 @@ flights14 = flights %>%
   )
 
 save(flights14, file = "data/flights-2014.rda", compress = "bzip2")
-write.csv(flights14, gzfile("data-raw/flights14.csv.gz"))
+write.csv(flights14, gzfile("data-raw/flights14.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
 
 nycflights14 = flights %>%
   filter(origin %in% c("JFK", "LGA", "EWR"))
 
 save(nycflights14, file = "data/nycflights14.rda", compress = "bzip2")
-write.csv(nycflights14, gzfile("data-raw/nycflights14.csv.gz"))
-
+write.csv(nycflights14, gzfile("data-raw/nycflights14.csv.gz"), row.names = FALSE, quote = FALSE, na = "")
