@@ -97,3 +97,4 @@ nycflights14 = flights %>%
 
 save(nycflights14, file = "data/nycflights14.rda", compress = "bzip2")
 write.csv(nycflights14, gzfile("data-raw/nycflights14.csv.gz"))
+
