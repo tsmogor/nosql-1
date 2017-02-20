@@ -14,6 +14,21 @@ EDA.
   the [gutenbergr package](https://github.com/ropenscilabs/gutenbergr),
   the [janeaustenr package](https://cran.r-project.org/web/packages/janeaustenr/index.html).
 
+:earth_africa:
+
+* [Introducing JSON](http://www.json.org/)
+* [The GeoJSON Format Specification](http://geojson.org/geojson-spec.html)
+  - [Simply edit GeoJSON map data](http://geojson.io/)
+  - [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github);
+    zob. też [Working with non-code files ](https://help.github.com/categories/working-with-non-code-files/)
+    oraz
+    [R Markdown Websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
+* [TopoJSON :globe_with_meridians:](https://github.com/topojson/topojson)
+
+Elasticsearch + Kibana.
+
+* []
+
 MongoDB, v3.4.x:
 
 * [Manual](https://docs.mongodb.com/manual/):

@@ -4,7 +4,7 @@ Terminarz rozliczania się z [projektów](http://wbzyl.inf.ug.edu.pl/nosql/zadan
 
 | projekt              | zadanie                  | deadline    |
 |----------------------|--------------------------|-------------|
-| przygotowanie danych | EDA (1, 2)               |             |
+| przygotowanie danych | EDA (0, 1, 2)            |             |
 | zaliczenie           | Aggregation Pipeline (3) | 23.04.2017  |
 | egzamin              | MapReduce (4)            | 21.05.2017  |
 
@@ -16,12 +16,10 @@ w pliku [projects.md](projects.md).
 
 ## Podręczne linki
 
-1. [Dokumentacja MongoDB](https://docs.mongodb.org/manual/):
-  * [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
-  * [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
-1. [Docker Jumpstart](https://github.com/odewahn/docker-jumpstart)
 1. [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
 1. [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
+1. [Emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet) –
+  do wykorzystania w dokumentacji.
 
 Więcej danych:
 
