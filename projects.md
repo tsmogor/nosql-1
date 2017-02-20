@@ -18,6 +18,9 @@ MongoDB, v3.4.x:
 
 * [Manual](https://docs.mongodb.com/manual/):
   - [Aggregation](https://docs.mongodb.com/manual/aggregation/)
+  - [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/)
+  - [Update Operators](https://docs.mongodb.org/manual/reference/operator/update/)
+
 * [Drivers](https://docs.mongodb.com/ecosystem/drivers/):
   - Ruby:
     * [Mongo](https://docs.mongodb.com/ruby-driver/master/quick-start/),
@@ -27,17 +30,15 @@ MongoDB, v3.4.x:
       the ODM officially supported by MongoDB is Mongoid,
       originally written by Durran Jordan
 
-MapReduce.
 
+## Projekty indywidualne (zaliczenie)
 
 > A good demo is disproportionately valuable in big data science.<br>
 > — [Storytelling](http://en.wikipedia.org/wiki/Storytelling)
 
-## Projekty indywidualne (zaliczenie)
-
 Pull request według schematu:
 ```
-1. [Nazwisko, Imię](link do repo z kodem applikacji). [Nazwa aplikacji](link do wdrożonej aplikacji)
+1. [Nazwisko, Imię](link do repozytorium na GitHub, GitLab albo Bitbucket).
 ```
 
 Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
@@ -45,12 +46,38 @@ Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
 (rozdział 6 książki [Pro Git](https://git-scm.com/book/en/v2))
 Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial).
 
+1. Białousz Marek
+2. Biewska Aldona
+3. Błachuciak Amelia
+4. Buszman Dariusz
+5. Centek Damian
+6. Cieślak Patrycja
+7. Czarnecki Sebastian
+8. Jaworowski Michał
+9. Kacprowicz Piotr
+10. Kiełb Michał
+11. Kisielewski Krystian
+12. Koliński Artur
+13. Ławrynowicz Jacek
+14. Mielewczyk Łukasz
+15. Nadoba Adam
+16. Pieper Adrian
+17. Seroka Paulina
+18. Sielachowicz Paweł
+19. Smogór Tomasz
+20. Soliwodzki Mateusz
+21. Strzała Marek
+22. Szlas Łukasz
+23. Tyczyński Michał
+24. Walczak Marta
+
+
 
 ## Projekty zespołowe (egzamin)
 
 Pull request według schematu:
 ```
-1. [Nazwa zespołu](link do repo z kodem applikacji). [Nazwa aplikacji](link do wdrożonej aplikacji)
+1. [Nazwisko, Imię](link do repozytorium na GitHub, GitLab albo Bitbucket).
 ```
 
-**Uwaga:** W pliku _README.md_ w repo należy wpisać wszystkich autorów aplikacji.
+**Uwaga:** W pliku _README.md_ w repo należy wpisać wszystkich autorów.
