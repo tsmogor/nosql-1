@@ -24,6 +24,8 @@ EDA.
     oraz
     [R Markdown Websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
 * [TopoJSON :globe_with_meridians:](https://github.com/topojson/topojson)
+* [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) – Wikipedia article:
+  „offspring of GeoJSON is TopoJSON”
 
 Elasticsearch + Kibana.
 
