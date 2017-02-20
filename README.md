@@ -4,7 +4,7 @@ Terminarz rozliczania się z [projektów](http://wbzyl.inf.ug.edu.pl/nosql/zadan
 
 | projekt              | zadanie                  | deadline    |
 |----------------------|--------------------------|-------------|
-| przygotowanie danych | EDA (0, 1, 2)            |             |
+| przygotowanie danych | EDA (:globe_with_meridians:, 1, 2)   | |
 | zaliczenie           | Aggregation Pipeline (3) | 23.04.2017  |
 | egzamin              | MapReduce (4)            | 21.05.2017  |
 
