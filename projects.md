@@ -85,7 +85,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 20. Soliwodzki Mateusz 22.02
 21. Strzała Marek
 22. Szlas Łukasz
-23. Tyczyński Michał 22.02
+23. Tyczyński Michał
 24. Walczak Marta
 
 
