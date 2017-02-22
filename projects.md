@@ -68,24 +68,24 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 3. Błachuciak Amelia
 4. Buszman Dariusz
 5. Centek Damian
-6. Cieślak Patrycja
+6. Cieślak Patrycja 22.02
 7. Czarnecki Sebastian
 8. Jaworowski Michał
 9. Kacprowicz Piotr
 10. Kiełb Michał
 11. Kisielewski Krystian
 12. Koliński Artur
-13. Ławrynowicz Jacek
+13. Ławrynowicz Jacek (MongoDB)
 14. Mielewczyk Łukasz
 15. Nadoba Adam
 16. Pieper Adrian
 17. Seroka Paulina
 18. Sielachowicz Paweł
 19. Smogór Tomasz
-20. Soliwodzki Mateusz
+20. Soliwodzki Mateusz 22.02
 21. Strzała Marek
 22. Szlas Łukasz
-23. Tyczyński Michał
+23. Tyczyński Michał 22.02
 24. Walczak Marta
 
 
