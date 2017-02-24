@@ -94,10 +94,26 @@ time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c 
 Plik _primer-dataset.json_ informacje o restauracjach w Nowym Jorku.
 
 ```bash
-wget https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/dataset.json
+wget https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
 cat dataset.json | gzip --stdout > primer-dataset.json.gz
 rm dataset.json
 
-gunzip -c primer-dataset.json.gz | shuf -n 1
-gunzip -c primer-dataset.json.gz | rl   -c 1
+gunzip -c primer-dataset.json.gz | shuf -n 1 # macOS, brew install coreutils (gshuf)
+gunzip -c primer-dataset.json.gz | rl   -c 1 # macOS, brew install randomize-lines
+```
+
+Unikamy zapisywania plików na dysku.
+
+```bash
+curl -s 'https://inf.ug.edu.pl/plan/?format=json' \
+  | mongoimport --drop --jsonArray -c plan
+# curl -s 'https://inf.ug.edu.pl/plan/?format=json' \
+#   | jq -c '.[]' \
+#   | mongoimport --drop -c plan
+curl -s https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json \
+  | mongoimport --drop -c restaurants
+# use `shuf -n 100` on Linux
+curl -s https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json \
+  | gshuf -n 100 \
+  | mongoimport --drop -c restaurants
 ```
