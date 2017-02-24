@@ -105,12 +105,11 @@ gunzip -c primer-dataset.json.gz | rl   -c 1 # macOS, brew install randomize-lin
 Unikamy zapisywania plików na dysku.
 
 ```bash
-curl -s 'https://inf.ug.edu.pl/plan/?format=json' \
-  | mongoimport --drop --jsonArray -c plan
+# curl -s 'https://inf.ug.edu.pl/plan/?format=json' \
+#   | mongoimport --drop --jsonArray -c plan
 # curl -s 'https://inf.ug.edu.pl/plan/?format=json' \
 #   | jq -c '.[]' \
 #   | mongoimport --drop -c plan
-# see --columnsHaveTypes in mongoimport --help
 curl -s https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json \
   | mongoimport --drop -c restaurants
 # use `shuf -n 100` on Linux
