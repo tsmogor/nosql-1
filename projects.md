@@ -83,7 +83,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 18. Sielachowicz Paweł
 19. Smogór Tomasz
 20. Soliwodzki Mateusz 22.02
-21. Strzała Marek
+21. [Strzała Marek](https://github.com/MarekAG/nosql)
 22. Szlas Łukasz
 23. Tyczyński Michał
 24. Walczak Marta
