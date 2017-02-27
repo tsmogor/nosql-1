@@ -69,7 +69,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 4. Buszman Dariusz
 5. Centek Damian
 6. Cieślak Patrycja 22.02
-7. Czarnecki Sebastian
+7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git)
 8. Jaworowski Michał
 9. Kacprowicz Piotr
 10. Kiełb Michał
