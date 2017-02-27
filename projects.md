@@ -72,7 +72,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git)
 8. Jaworowski Michał
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
-10. Kiełb Michał
+10. [Kiełb Michał](https://github.com/mkielb/nosql)
 11. Kisielewski Krystian
 12. Koliński Artur
 13. [Ławrynowicz Jacek (MongoDB)](https://github.com/jlawrynowicz/projekty-nosql)
