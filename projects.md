@@ -71,7 +71,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 6. Cieślak Patrycja 22.02
 7. Czarnecki Sebastian
 8. Jaworowski Michał
-9. Kacprowicz Piotr
+9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
 10. Kiełb Michał
 11. Kisielewski Krystian
 12. Koliński Artur
