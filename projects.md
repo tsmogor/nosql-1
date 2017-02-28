@@ -64,7 +64,7 @@ Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
 Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial).
 
 1. Białousz Marek
-2. Biewska Aldona
+2. [Biewska Aldona](https://github.com/abie115/nosql)
 3. Błachuciak Amelia
 4. Buszman Dariusz
 5. Centek Damian
