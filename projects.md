@@ -82,7 +82,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 19. Smogór Tomasz 1.03
 20. Soliwodzki Mateusz 22.02 1.03
 21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens).
-22. Szlas Łukasz
+22. [Szlas Łukasz](https://github.com/vakoz2/nosql)
 23. Tyczyński Michał 1.03
 24. [Walczak Marta](https://github.com/mawala/projekty-nosql)
 25. Zawistowski Łukasz
