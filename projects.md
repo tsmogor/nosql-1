@@ -66,9 +66,10 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
 2. [Biewska Aldona](https://github.com/abie115/nosql)
 3. [Błachuciak Amelia](https://github.com/erathiel/nosql)
-4. Buszman Dariusz
+4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 6. Cieślak Patrycja 22.02
+7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon movie reviews)
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git)
 8. [Jaworowski Michał](https://github.com/kropeq/nosql)
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
@@ -76,12 +77,12 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 11. Kisielewski Krystian
 12. Koliński Artur 1.03
 14. [Mielewczyk Łukasz](https://github.com/romety2/nosql)
-16. Pieper Adrian
+16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project)
 17. Seroka Paulina 1.03
 18. Sielachowicz Paweł 1.03
 19. Smogór Tomasz 1.03
 20. Soliwodzki Mateusz 22.02 1.03
-21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens).
+21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens)
 22. [Szlas Łukasz](https://github.com/vakoz2/nosql)
 23. Tyczyński Michał 1.03
 24. [Walczak Marta](https://github.com/mawala/projekty-nosql)
@@ -90,7 +91,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 ----
 
 13. [Ławrynowicz Jacek (MongoDB)](https://github.com/jlawrynowicz/projekty-nosql)
-15. Nadoba Adam (MongoDB Performance).
+15. [Nadoba Adam](https://github.com/anadoba/projekty-nosql) (MongoDB Performance)
 
 
 ## Projekty zespołowe (egzamin)
