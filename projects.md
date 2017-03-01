@@ -85,7 +85,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 22. [Szlas Łukasz](https://github.com/vakoz2/nosql)
 23. Tyczyński Michał 1.03
 24. [Walczak Marta](https://github.com/mawala/projekty-nosql)
-25. Zawistowski Łukasz
+25. [Zawistowski Łukasz](https://github.com/lzawistowski/nosql)
 
 ----
 
