@@ -63,7 +63,7 @@ Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
 (rozdział 6 książki [Pro Git](https://git-scm.com/book/en/v2))
 Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial).
 
-1. Białousz Marek
+1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
 2. [Biewska Aldona](https://github.com/abie115/nosql)
 3. [Błachuciak Amelia](https://github.com/erathiel/nosql)
 4. Buszman Dariusz
