@@ -70,7 +70,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 6. Cieślak Patrycja 22.02
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git)
-8. Jaworowski Michał
+8. [Jaworowski Michał](https://github.com/kropeq/nosql)
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
 10. [Kiełb Michał](https://github.com/mkielb/nosql)
 11. Kisielewski Krystian
