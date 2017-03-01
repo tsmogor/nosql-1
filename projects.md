@@ -75,7 +75,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 10. [Kiełb Michał](https://github.com/mkielb/nosql)
 11. Kisielewski Krystian
 12. Koliński Artur 1.03
-14. Mielewczyk Łukasz
+14. [Mielewczyk Łukasz](https://github.com/romety2/nosql)
 16. Pieper Adrian
 17. Seroka Paulina 1.03
 18. Sielachowicz Paweł 1.03
