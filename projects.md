@@ -74,20 +74,23 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
 10. [Kiełb Michał](https://github.com/mkielb/nosql)
 11. Kisielewski Krystian
-12. Koliński Artur
-13. [Ławrynowicz Jacek (MongoDB)](https://github.com/jlawrynowicz/projekty-nosql)
+12. Koliński Artur 1.03
 14. Mielewczyk Łukasz
-15. Nadoba Adam
 16. Pieper Adrian
-17. Seroka Paulina
-18. Sielachowicz Paweł
-19. Smogór Tomasz
-20. Soliwodzki Mateusz 22.02
-21. [Strzała Marek](https://github.com/MarekAG/nosql)
+17. Seroka Paulina 1.03
+18. Sielachowicz Paweł 1.03
+19. Smogór Tomasz 1.03
+20. Soliwodzki Mateusz 22.02 1.03
+21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens).
 22. Szlas Łukasz
-23. Tyczyński Michał
+23. Tyczyński Michał 1.03
 24. [Walczak Marta](https://github.com/mawala/projekty-nosql)
+25. Zawistowski Łukasz
 
+----
+
+13. [Ławrynowicz Jacek (MongoDB)](https://github.com/jlawrynowicz/projekty-nosql)
+15. Nadoba Adam (MongoDB Performance).
 
 
 ## Projekty zespołowe (egzamin)
