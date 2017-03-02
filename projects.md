@@ -74,7 +74,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 8. [Jaworowski Michał](https://github.com/kropeq/nosql)
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
 10. [Kiełb Michał](https://github.com/mkielb/nosql)
-11. Kisielewski Krystian
+11. [Kisielewski Krystian](https://bitbucket.org/nosql2017/nosql)
 12. Koliński Artur 1.03
 14. [Mielewczyk Łukasz](https://github.com/romety2/nosql)
 16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project)
