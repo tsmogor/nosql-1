@@ -64,17 +64,16 @@ Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
 Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial).
 
 1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
-2. [Biewska Aldona](https://github.com/abie115/nosql)
-3. [Błachuciak Amelia](https://github.com/erathiel/nosql)
+2. [Biewska Aldona](https://github.com/abie115/nosql) (Open Crime and Policing Data in England, Wales and Northern Ireland)
+3. [Błachuciak Amelia](https://github.com/erathiel/nosql) (Steam Database)
 4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 6. Cieślak Patrycja 22.02
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon movie reviews)
-7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git)
-8. [Jaworowski Michał](https://github.com/kropeq/nosql)
-9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL)
-10. [Kiełb Michał](https://github.com/mkielb/nosql)
-11. [Kisielewski Krystian](https://bitbucket.org/nosql2017/nosql)
+8. [Jaworowski Michał](https://github.com/kropeq/nosql) (Twitter Data For Sentiment Analysis)
+9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL) (Jester)
+10. [Kiełb Michał](https://github.com/mkielb/nosql) (GitHub Collaboration Archive)
+11. [Kisielewski Krystian](https://bitbucket.org/nosql2017/nosql) (Book-Crossing Dataset)
 12. Koliński Artur 1.03
 14. [Mielewczyk Łukasz](https://github.com/romety2/nosql)
 16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project)
@@ -83,7 +82,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 19. Smogór Tomasz 1.03
 20. Soliwodzki Mateusz 22.02 1.03
 21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens)
-22. [Szlas Łukasz](https://github.com/vakoz2/nosql)
+22. [Szlas Łukasz](https://github.com/vakoz2/nosql) (Crimes in Chicago 2012–2017)
 23. [Tyczyński Michał](https://github.com/mtyczynski/nosql) 1.03
 24. [Walczak Marta](https://github.com/mawala/projekty-nosql)
 25. [Zawistowski Łukasz](https://github.com/lzawistowski/nosql)
