@@ -69,7 +69,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 6. Cieślak Patrycja 22.02
-7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon movie reviews)
+7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon Movie Reviews)
 8. [Jaworowski Michał](https://github.com/kropeq/nosql) (Twitter Data For Sentiment Analysis)
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL) (Jester)
 10. [Kiełb Michał](https://github.com/mkielb/nosql) (GitHub Collaboration Archive)
