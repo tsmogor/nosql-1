@@ -93,7 +93,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 15. [Nadoba Adam](https://github.com/anadoba/projekty-nosql) (MongoDB Performance)
 
 
-## Projekty zespołowe (egzamin)
+## Projekty zespołowe (egzamin = średnia arytmetyczna z zaliczenia i MapReduce)
 
 Pull request według schematu:
 ```
