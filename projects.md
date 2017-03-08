@@ -95,7 +95,8 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 6. Cieślak Patrycja 22.02 08.03
 20. Soliwodzki Mateusz 22.02 1.03 08.03
 
-## Projekty zespołowe (egzamin = średnia arytmetyczna z zaliczenia i MapReduce)
+
+## Projekty zespołowe (egzamin = średnia z zaliczenia i MapReduce)
 
 Pull request według schematu:
 ```
