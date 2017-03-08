@@ -64,7 +64,7 @@ Dodatkowe informacje na temat _pull requests_: Scott Chacon and Ben Straub,
 Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial).
 
 1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
-2. [Biewska Aldona](https://github.com/abie115/nosql) (Open Crime in UK 07-12.2016)
+2. [Biewska Aldona](https://github.com/abie115/nosql) (Open Crime Data in UK 07-12.2016)
 3. [Błachuciak Amelia](https://github.com/erathiel/nosql) (Steam Database)
 4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
