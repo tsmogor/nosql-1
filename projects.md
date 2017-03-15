@@ -92,7 +92,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 
 ---
 
-6. Cieślak Patrycja 22.02 08.03
+6. Cieślak Patrycja 22.02 08.03 [Cieślak Patrycja] (https://github.com/PatrycjaC/Technologie-NoSQL)
 20. Soliwodzki Mateusz 22.02 1.03 08.03
 
 
