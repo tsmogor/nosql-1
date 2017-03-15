@@ -65,7 +65,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 
 1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
 2. [Biewska Aldona](https://github.com/abie115/nosql) (Open Crime Data in UK 07-12.2016)
-3. [Błachuciak Amelia](https://github.com/erathiel/nosql) (Steam Database)
+3. [Błachuciak Amelia](https://github.com/erathiel/nosql) (Stack Overflow questions and tags up to 10.2016)
 4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon Movie Reviews)
