@@ -21,6 +21,17 @@ w pliku [projects.md](projects.md).
 1. [Emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet) –
   do wykorzystania w dokumentacji.
 
+Wikimedia:
+
+1. [Data Analysis Task](https://github.com/wikimedia-research/Discovery-Hiring-Analyst-2016) –
+  task description and data for candidates applying to be a Data Analyst
+  in the Discovery department at Wikimedia Foundation
+1. [Traffic Analyst task](https://github.com/wikimedia-research/traffic_task) –
+  task for candidates for the Wikimedia Foundation's traffic analyst job
+1. [S&D Data Analyst task](https://github.com/wikimedia-research/search_task) –
+  task for the Search & Discovery data analyst job
+
+
 Więcej danych:
 
 * [Watching Our World Unfold](http://www.gdeltproject.org):
