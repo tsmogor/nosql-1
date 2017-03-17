@@ -39,6 +39,9 @@ Więcej danych:
     [raw data files](http://www.gdeltproject.org/data.html)
 * [NOAA](https://www.ncdc.noaa.gov/data-access) –
   National Centers for Environmental Information (US)
+* [News API](https://newsapi.org) – a simple and easy-to-use API that returns
+  JSON metadata for the headlines currently published on
+  a range of news sources and blogs (+70)
 
 
 ## Simple Rules for Reproducible Computations
