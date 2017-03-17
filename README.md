@@ -31,7 +31,6 @@ Wikimedia:
 1. [S&D Data Analyst task](https://github.com/wikimedia-research/search_task) –
   task for the Search & Discovery data analyst job
 
-
 Więcej danych:
 
 * [Watching Our World Unfold](http://www.gdeltproject.org):
