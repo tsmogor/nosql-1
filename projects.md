@@ -76,7 +76,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 12. [Koliński Artur](https://github.com/artkolinski/NoSQL) (National Statistics Postcode Lookup UK) 1.03
 14. [Mielewczyk Łukasz](https://github.com/romety2/nosql) (NHS Postcode Directory (Latest) Centroids)
 16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project)
-17. [Seroka Paulina](https://github.com/pseroka/nosql) (UK Car Accidents 2005-2015) 1.03
+17. [Seroka Paulina](https://github.com/pseroka/nosql) (Twitch Dataset) 1.03
 18. [Sielachowicz Paweł](https://github.com/psielachowicz/NoSQLDB)
 19. [Smogór Tomasz](https://github.com/tsmogor/NoSql) (Global Terrorism Database 1970-2015) 1.03
 21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens)
