@@ -72,7 +72,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 8. [Jaworowski Michał](https://github.com/kropeq/nosql) (Twitter Data For Sentiment Analysis)
 9. [Kacprowicz Piotr](https://github.com/Undauted/NoSQL) (Jester)
 10. [Kiełb Michał](https://github.com/mkielb/nosql) (NYC Taxi Trip Data 2009-: Yellow, January 2016, 1.59GB)
-11. [Kisielewski Krystian](https://bitbucket.org/nosql2017/nosql) (Book-Crossing Dataset)
+11. [Kisielewski Krystian](https://bitbucket.org/nosql2017/nosql) (Book-Crossing Dataset, Archaeological Monuments, Sports on Stackexchange)
 12. [Koliński Artur](https://github.com/artkolinski/NoSQL) (National Statistics Postcode Lookup UK) 1.03
 14. [Mielewczyk Łukasz](https://github.com/romety2/nosql) (NHS Postcode Directory (Latest) Centroids)
 16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project)
