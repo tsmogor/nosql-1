@@ -88,8 +88,8 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 
 ----
 
-13. [Ławrynowicz Jacek](https://github.com/jlawrynowicz/projekty-nosql) (MongoDB for Java Developers)
-15. [Nadoba Adam](https://github.com/anadoba/projekty-nosql) (MongoDB Performance)
+* [Ławrynowicz Jacek](https://github.com/jlawrynowicz/projekty-nosql) (MongoDB for Java Developers)
+* [Nadoba Adam](https://github.com/anadoba/projekty-nosql) (MongoDB Performance)
 
 ---
 
