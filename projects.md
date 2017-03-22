@@ -79,7 +79,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 16. [Pieper Adrian](https://github.com/adrpieper/ug-nosql-project) (Uber Pickups in New York City)
 17. [Seroka Paulina](https://github.com/pseroka/nosql) (Twitch Dataset) 1.03
 18. [Sielachowicz Paweł](https://github.com/psielachowicz/NoSQLDB)
-19. [Smogór Tomasz](https://github.com/tsmogor/NoSql) (Global Terrorism Database 1970-2015) 1.03
+19. [Smogór Tomasz](https://github.com/tsmogor/NoSql) (UK Car Accidents 2005-2015) 1.03
 21. [Strzała Marek](https://github.com/MarekAG/nosql) (MovieLens)
 22. [Szlas Łukasz](https://github.com/vakoz2/nosql) (Crimes in Chicago 2012–2017)
 23. [Tyczyński Michał](https://github.com/mtyczynski/nosql) (Reddit comments from 15 days) 1.03
