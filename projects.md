@@ -47,7 +47,7 @@ MongoDB, v3.4.x:
       the ODM officially supported by MongoDB is Mongoid,
       originally written by Durran Jordan
 
-
+ 
 ## Projekty indywidualne (zaliczenie)
 
 > A good demo is disproportionately valuable in big data science.<br>
@@ -66,7 +66,7 @@ Michael Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/gi
 1. [Białousz Marek](https://github.com/Mareks1/noSQL-projekt)
 2. [Biewska Aldona](https://github.com/abie115/nosql) (Open Crime Data in UK 07-12.2016)
 3. [Błachuciak Amelia](https://github.com/erathiel/nosql) (Stack Overflow questions and tags up to 10.2016)
-4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL)
+4. [Buszman Dariusz](https://github.com/dbuszman/NoSQL) (Transport releated data in Poland)
 5. [Centek Damian](https://github.com/DragonDC/NoSQL)
 6. [Cieślak Patrycja](https://github.com/PatrycjaC/Technologie-NoSQL) 22.02 08.03
 7. [Czarnecki Sebastian](https://github.com/sebcza/nosql.git) (Amazon Movie Reviews)
